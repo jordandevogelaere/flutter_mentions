@@ -85,6 +85,11 @@ class FlutterMentions extends StatefulWidget {
   /// Defaults to `300.0`
   final double suggestionListHeight;
 
+  /// Max width for the suggestion list
+  ///
+  /// Defaults is double.infinity
+  final double? suggestionListWidth;
+
   /// A Functioned which is triggered when ever the input changes
   /// but with the markup of the selected mentions
   ///
