@@ -7,6 +7,7 @@ class FlutterMentions extends StatefulWidget {
     this.defaultText,
     this.suggestionPosition = SuggestionPosition.Bottom,
     this.suggestionListHeight = 300.0,
+    this.suggestionListWidth,
     this.onMarkupChanged,
     this.onMentionAdd,
     this.onSearchChanged,
@@ -424,6 +425,7 @@ class FlutterMentionsState extends State<FlutterMentions> {
           builder: (BuildContext context, bool show, Widget? child) {
             return show && !widget.hideSuggestionList
                 ? OptionList(
+                    suggestionListWidth: widget.suggestionListWidth,
                     suggestionListHeight: widget.suggestionListHeight,
                     suggestionBuilder: list.suggestionBuilder,
                     suggestionListDecoration: widget.suggestionListDecoration,

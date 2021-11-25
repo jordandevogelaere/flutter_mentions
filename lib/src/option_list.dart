@@ -27,6 +27,7 @@ class OptionList extends StatelessWidget {
                 suggestionListDecoration ?? BoxDecoration(color: Colors.white),
             constraints: BoxConstraints(
               maxHeight: suggestionListHeight,
+              maxWidth: 300,
               minHeight: 0,
             ),
             child: ListView.builder(
